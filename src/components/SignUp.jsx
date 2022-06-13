@@ -26,7 +26,7 @@ export default function SignUpComponent() {
           password: password,
         }).then((response) => {
           if (response.data.data) {
-            navigate('/login');
+            navigate('/');
           }
           else {
             console.log(response.data.error);
